@@ -1,0 +1,125 @@
+/* styles.css */
+
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    margin: 5px 0;
+    font-size: 1.2em;
+}
+
+section {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    background: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    border-bottom: 2px solid #35424a;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    color: #35424a;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+ul li::before {
+    content: "•";
+    color: #35424a;
+    position: absolute;
+    left: 0;
+    font-size: 1.5em;
+}
+
+footer {
+    background: #35424a;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+a {
+    color: #35424a;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Contact Section */
+#contact p {
+    margin: 10px 0;
+}
+
+/* Education Section */
+#education ul li {
+    margin-bottom: 20px;
+}
+
+/* Internships & Projects Sections */
+#internships ul li, #projects ul li {
+    margin-bottom: 20px;
+}
+
+#internships ul li ul, #projects ul li ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+/* Skills Section */
+#skills p {
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    section {
+        padding: 10px;
+    }
+
+    footer {
+        font-size: 0.9em;
+    }
+}
